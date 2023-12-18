@@ -79,7 +79,6 @@ nav{
   border: none;
   border-radius: 30px;
   background: linear-gradient(#9356DC, #FF79DA);
-
   height: 50px;
   width: 220px;
   color: #ffffff;
@@ -87,6 +86,10 @@ nav{
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
+  &:hover {
+    background: linear-gradient(#ff90e7, #a16eff);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .fonctionnement{
