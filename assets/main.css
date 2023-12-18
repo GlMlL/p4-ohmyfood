@@ -72,7 +72,7 @@ nav p {
 .title button {
   border: none;
   border-radius: 30px;
-  background: linear-gradient(#ff90e7, #a16eff);
+  background: linear-gradient(#9356DC, #FF79DA);
   height: 50px;
   width: 220px;
   color: #ffffff;
@@ -235,19 +235,4 @@ footer {
 }
 .footer__main span {
   color: #EAEAEA;
-}
-
-.header__title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.header__title img {
-  object-fit: cover;
-  width: 100%;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
