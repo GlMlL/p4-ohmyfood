@@ -160,13 +160,14 @@ nav p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-section {
-  margin-left: 15%;
+.content {
+  margin: 5%;
 }
-section .title {
+.content .title {
   display: flex;
+  flex-direction: column;
 }
-section .title h1 {
+.content .title h1 {
   font-family: shrikhand;
 }
 

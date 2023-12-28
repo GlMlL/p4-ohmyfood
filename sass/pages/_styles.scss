@@ -166,10 +166,11 @@ nav{
   }
 }
 
-section{
-  margin-left: 15%;
+.content{
+  margin: 5%;
     .title{
       display: flex;
+      flex-direction: column;
         h1{
           font-family: shrikhand;
         }
