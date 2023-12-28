@@ -29,8 +29,10 @@ header{
           align-items: flex-start;
         }
     }
+}
 
-    
+.image__menu{
+  object-fit: cover;
 }
 
 form{
