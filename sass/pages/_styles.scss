@@ -19,7 +19,8 @@ nav{
           padding-bottom: 4%;
         }
     }
-    .header__menu{
+}    
+.header__menu{
       display: flex;
       flex-direction: row;
         .fa-arrow-left{
@@ -29,8 +30,8 @@ nav{
           width: 18px;
         }
 
-    }
 }
+
 
 .image__menu{
   width: 100%;
