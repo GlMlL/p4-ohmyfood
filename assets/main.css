@@ -188,6 +188,9 @@ nav p {
   font-weight: lighter;
   font-size: 16px;
   line-height: 19px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 6px;
 }
 .menu h3-cards {
   border-radius: 15px;
@@ -197,14 +200,14 @@ nav p {
   padding: 3%;
 }
 .menu__entrees-cards h4 {
-  margin: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 0%;
   font-weight: 700;
   font-size: 18px;
   line-height: 19px;
 }
 .menu__entrees-cards .prix {
-  padding-left: 40%;
   font-weight: 600;
 }
 .menu__plats-cards {
@@ -212,14 +215,14 @@ nav p {
   padding: 3%;
 }
 .menu__plats-cards h4 {
-  margin: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 0%;
   font-weight: 700;
   font-size: 18px;
   line-height: 19px;
 }
 .menu__plats-cards .prix {
-  padding-left: 40%;
   font-weight: 600;
 }
 .menu__desserts-cards {
@@ -227,14 +230,14 @@ nav p {
   padding: 3%;
 }
 .menu__desserts-cards h4 {
-  margin: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 0%;
   font-weight: 700;
   font-size: 18px;
   line-height: 19px;
 }
 .menu__desserts-cards .prix {
-  padding-left: 40%;
   font-weight: 600;
 }
 
@@ -322,6 +325,7 @@ footer {
   background-color: #353535;
   display: flex;
   flex-direction: column;
+  padding-bottom: 4%;
 }
 
 .footer__main {
