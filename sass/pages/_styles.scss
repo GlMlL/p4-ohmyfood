@@ -22,12 +22,11 @@ header{
     .header__menu{
       display: flex;
       flex-direction: row;
-      align-items: center;
-      justify-content: center;
-        &-logo{
+        &-arrow{
           display: flex;
           align-items: flex-start;
         }
+
     }
 }
 
