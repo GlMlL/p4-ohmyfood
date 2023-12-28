@@ -23,16 +23,23 @@ nav .header__title--logo img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 3%;
 }
-.header__menu .fa-arrow-left {
+.header__menu-arrow {
   display: flex;
   align-items: flex-start;
+  align-items: center;
+  font-size: larger;
   color: grey;
   width: 18px;
 }
 .header__menu-logo {
   align-items: center;
   justify-content: center;
+}
+.header__menu-logo img {
+  width: 52%;
+  padding-left: 20%;
 }
 
 .image__menu {
@@ -172,6 +179,7 @@ nav p {
 .content .title h1 {
   font-family: shrikhand;
 }
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -186,6 +194,48 @@ nav p {
 }
 .menu__entrees-cards {
   display: flex;
+  padding: 3%;
+}
+.menu__entrees-cards h4 {
+  margin: 2%;
+  margin-left: 0%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+}
+.menu__entrees-cards .prix {
+  padding-left: 40%;
+  font-weight: 600;
+}
+.menu__plats-cards {
+  display: flex;
+  padding: 3%;
+}
+.menu__plats-cards h4 {
+  margin: 2%;
+  margin-left: 0%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+}
+.menu__plats-cards .prix {
+  padding-left: 40%;
+  font-weight: 600;
+}
+.menu__desserts-cards {
+  display: flex;
+  padding: 3%;
+}
+.menu__desserts-cards h4 {
+  margin: 2%;
+  margin-left: 0%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+}
+.menu__desserts-cards .prix {
+  padding-left: 40%;
+  font-weight: 600;
 }
 
 .restaurants {

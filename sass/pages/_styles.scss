@@ -24,15 +24,24 @@ nav{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-        .fa-arrow-left{
+      padding: 3%;
+        &-arrow{
           display: flex;
           align-items: flex-start;
+          align-items: center;
+          font-size: larger;
           color: grey;
           width: 18px;
         }
         &-logo{
           align-items: center;
           justify-content: center;
+            img{
+              width: 52%;
+              padding-left: 20%;
+            }
+          
+
         }
 
 }
@@ -176,9 +185,6 @@ nav{
         h1{
           font-family: shrikhand;
         }
-        i{
-
-        }
     }
 }
 
@@ -195,7 +201,53 @@ nav{
     }
     &__entrees-cards{
       display: flex;
+      padding: 3%;
+      
+        h4{
+          margin: 2%;
+          margin-left: 0%;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 19px;
+
+        }
+        .prix{
+          padding-left: 40%;
+          font-weight: 600;
+        }
+        
     }
+    &__plats-cards{
+      display: flex;
+      padding: 3%;
+      h4{
+        margin: 2%;
+        margin-left: 0%;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 19px;
+      }
+      .prix{
+        padding-left: 40%;
+        font-weight: 600;
+      }
+    }
+    &__desserts-cards{
+      display: flex;
+      padding: 3%;
+      h4{
+        margin: 2%;
+        margin-left: 0%;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 19px;
+      }
+      .prix{
+        padding-left: 40%;
+        font-weight: 600;
+      }
+    }
+    
 
 }
 
