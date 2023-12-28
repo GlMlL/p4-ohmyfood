@@ -184,6 +184,9 @@ nav p {
 .menu h3-cards {
   border-radius: 15px;
 }
+.menu__entrees-cards {
+  display: flex;
+}
 
 .restaurants {
   display: flex;
