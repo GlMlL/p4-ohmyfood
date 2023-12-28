@@ -25,13 +25,17 @@ nav{
         .fa-arrow-left{
           display: flex;
           align-items: flex-start;
+          color: grey;
+          width: 18px;
         }
 
     }
 }
 
 .image__menu{
+  img{
   object-fit: cover;
+  }
 }
 
 form{
