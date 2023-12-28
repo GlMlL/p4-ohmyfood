@@ -165,12 +165,13 @@ nav p {
 }
 .content .title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 .content .title h1 {
   font-family: shrikhand;
 }
-
 .menu {
   display: flex;
   flex-direction: column;
