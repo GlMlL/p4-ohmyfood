@@ -176,12 +176,12 @@ nav p {
   display: flex;
   flex-direction: column;
 }
-.menu__entrees {
+.menu h3 {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
 }
-.menu__entrees-cards {
+.menu h3-cards {
   border-radius: 15px;
 }
 
