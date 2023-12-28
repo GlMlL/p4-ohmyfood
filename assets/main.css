@@ -160,6 +160,29 @@ nav p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+section {
+  margin-left: 15%;
+}
+section .title {
+  display: flex;
+}
+section .title h1 {
+  font-family: shrikhand;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu__entrees {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.menu__entrees-cards {
+  border-radius: 15px;
+}
+
 .restaurants {
   display: flex;
   flex-direction: column;

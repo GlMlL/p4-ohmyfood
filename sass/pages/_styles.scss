@@ -166,6 +166,30 @@ nav{
   }
 }
 
+section{
+  margin-left: 15%;
+    .title{
+      display: flex;
+        h1{
+          font-family: shrikhand;
+        }
+    }
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+    &__entrees{
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+        &-cards{
+          border-radius: 15px;
+        }
+    }
+
+}
+
 .restaurants{
   display: flex;
   flex-direction: column;
