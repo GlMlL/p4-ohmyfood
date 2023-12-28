@@ -19,6 +19,16 @@ header{
           padding-bottom: 4%;
         }
     }
+    .header__menu{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+        i{
+          display: flex;
+          align-items: flex-start;
+        }
+    }
 
     
 }
@@ -95,12 +105,10 @@ nav{
 .fonctionnement{
   display: flex;
   flex-direction: column;
-    &__title{
-      h2{
-      padding-left: 54%;
+    h2{
+      padding-left: 8%;
       font-weight: 700;
       }
-    }
     &__assemblage{
       display: flex;
       flex-direction: column;
@@ -249,6 +257,7 @@ footer{
     }
     i{
       margin-right: 2%;
+      flex-basis: 25px;
     }
     span{
       color: #EAEAEA;

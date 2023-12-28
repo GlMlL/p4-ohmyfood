@@ -90,8 +90,8 @@ nav p {
   display: flex;
   flex-direction: column;
 }
-.fonctionnement__title h2 {
-  padding-left: 54%;
+.fonctionnement h2 {
+  padding-left: 8%;
   font-weight: 700;
 }
 .fonctionnement__assemblage {
@@ -236,6 +236,7 @@ footer {
 }
 .footer__main i {
   margin-right: 2%;
+  flex-basis: 25px;
 }
 .footer__main span {
   color: #EAEAEA;
