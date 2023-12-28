@@ -22,7 +22,7 @@ nav{
     .header__menu{
       display: flex;
       flex-direction: row;
-        &-arrow{
+        .fa-arrow-left{
           display: flex;
           align-items: flex-start;
         }
