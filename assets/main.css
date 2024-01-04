@@ -33,6 +33,9 @@ nav .header__title--logo img {
   color: grey;
   width: 18px;
 }
+.header__menu-arrow i {
+  color: #353535;
+}
 .header__menu-logo {
   align-items: center;
   justify-content: center;
@@ -111,7 +114,7 @@ nav p {
   font-weight: 500;
   font-size: 16px;
   transition-property: transform;
-  transition-duration: 800ms;
+  transition-duration: 1000ms;
 }
 .title button:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -204,6 +207,9 @@ nav p {
   display: flex;
   padding: 3%;
 }
+.menu__entrees-cards span {
+  flex: 1 1 90%;
+}
 .menu__entrees-cards h4 {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -214,10 +220,14 @@ nav p {
 }
 .menu__entrees-cards .prix {
   font-weight: 600;
+  flex-basis: 10%;
 }
 .menu__plats-cards {
   display: flex;
   padding: 3%;
+}
+.menu__plats-cards span {
+  flex: 1 1 90%;
 }
 .menu__plats-cards h4 {
   margin-top: 2%;
@@ -229,10 +239,14 @@ nav p {
 }
 .menu__plats-cards .prix {
   font-weight: 600;
+  flex-basis: 10%;
 }
 .menu__desserts-cards {
   display: flex;
   padding: 3%;
+}
+.menu__desserts-cards span {
+  flex: 1 1 90%;
 }
 .menu__desserts-cards h4 {
   margin-top: 2%;
@@ -244,6 +258,7 @@ nav p {
 }
 .menu__desserts-cards .prix {
   font-weight: 600;
+  flex-basis: 10%;
 }
 
 .restaurants {
@@ -320,10 +335,31 @@ article {
   margin-bottom: 11%;
 }
 .description_card-logo {
-  margin-right: 10%;
+  position: relative;
+  width: 12px;
+  height: 25px;
+  right: 15%;
 }
 .description_card-logo i {
-  width: 50%;
+  position: absolute;
+  font-size: 30px;
+}
+.description_card-logo i .fa-solid, .description_card-logo i fa-heart {
+  opacity: 0;
+}
+.description_card-logo i .vide {
+  left: 380%;
+}
+.description_card-logo i:hover {
+  opacity: 1;
+  color: rgb(147, 86, 220);
+}
+
+.title_heart {
+  position: relative;
+  width: 12px;
+  height: 25px;
+  font-size: 24px;
 }
 
 footer {
