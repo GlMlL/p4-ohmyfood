@@ -344,11 +344,8 @@ article {
   position: absolute;
   font-size: 30px;
 }
-.description_card-logo i .fa-solid, .description_card-logo i fa-heart {
+.description_card-logo .fa-solid {
   opacity: 0;
-}
-.description_card-logo i .vide {
-  left: 380%;
 }
 .description_card-logo i:hover {
   opacity: 1;
