@@ -11,12 +11,10 @@ nav{
   align-items: center;
 
     .header__title--logo{
-      width: 45%;
-      
-      height: 150%;
+      height: 110px;
         img{
-          padding-top: 15%;
-          padding-bottom: 4%;
+          height: 65px;
+          padding-top: 6%;
         }
     }
 }    
@@ -137,6 +135,7 @@ nav{
     h2{
       padding-left: 8%;
       font-weight: 700;
+      padding-top: 6%;
       }
     &__assemblage{
       display: flex;
@@ -144,12 +143,12 @@ nav{
       justify-content: center;
       align-items: center;
         i{
-         padding: 10%;
+         padding: 6%;
         }
     
     .fa-color {
       color: #9356dc;
-      padding: 10%;
+      padding: 6%;
     }
     .nombre{
       color: #f6f6f6;
@@ -213,7 +212,8 @@ nav{
     &__entrees-cards{
       display: flex;
       padding: 3%;
-        span{
+      overflow: hidden;
+      span{
           flex: 1 1 90%;
         }
       
@@ -228,13 +228,39 @@ nav{
         }
         .prix{
           font-weight: 600;
-          flex-basis: 10%;
+          flex-basis: 20%;
+          align-self: end;
         }
-        
+        .check {
+          margin-top: -20%;
+          margin-bottom: -20%;
+          padding-left: 10%;
+          padding-right: 10%;
+          background-color: #99E2D0;
+          margin-right: -9rem;
+          border-radius: 0px 15px 15px 0px;
+          display: flex;
+          align-items: center;
+          transition: 1s;
+          cursor: pointer;
+        }
+        .fa-circle-check {
+          font-size: 25px;
+          border-radius: 50%;
+          color: white ;
+        }
+        }
+        &__entrees-cards:hover .check {
+          margin-right: -5%;
+          opacity: 1;
+
     }
+        
+  
     &__plats-cards{
       display: flex;
       padding: 3%;
+      overflow: hidden;
         span{
           flex: 1 1 90%;
         }
@@ -248,13 +274,37 @@ nav{
         }
         .prix{
           font-weight: 600;
-          flex-basis: 10%;
-          }
+          flex-basis: 20%;
+          align-self: end;
+        }
+        .check {
+            margin-top: -20%;
+            margin-bottom: -20%;
+            padding-left: 10%;
+            padding-right: 10%;
+            background-color: #99E2D0;
+            margin-right: -9rem;
+            border-radius: 0px 15px 15px 0px;
+            display: flex;
+            align-items: center;
+            transition: 1s;
+            cursor: pointer;
+        }
+        .fa-circle-check {
+            font-size: 25px;
+            border-radius: 50%;
+            color: white ;
+        }
+        }
+        &__plats-cards:hover .check {
+          margin-right: -5%;
+          opacity: 1;  
       }
     
     &__desserts-cards{
       display: flex;
       padding: 3%;
+      overflow: hidden;
       span{
         flex: 1 1 90%;
       }
@@ -268,10 +318,34 @@ nav{
       }
       .prix{
         font-weight: 600;
-        flex-basis: 10%;
-        }
+        flex-basis: 20%;
+        align-self: end;
+      }
+      .check {
+        margin-top: -20%;
+        margin-bottom: -20%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #99E2D0;
+        margin-right: -9rem;
+        border-radius: 0px 15px 15px 0px;
+        display: flex;
+        align-items: center;
+        transition: 1s;
+        cursor: pointer;
+      }
+      .fa-circle-check {
+        font-size: 25px;
+        border-radius: 50%;
+        color: white ;
+      }
+      }
+      &__desserts-cards:hover .check {
+        margin-right: -5%;
+        opacity: 1;  
     }
-}
+    }
+
     
     
 
@@ -360,7 +434,7 @@ article{
         i{
           position: absolute;
           font-size: 30px;
-            
+          transition: flex-basis 0.5s ;
         }
         .fa-solid{
               opacity: 0;

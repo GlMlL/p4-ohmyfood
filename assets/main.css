@@ -11,12 +11,11 @@ nav {
   align-items: center;
 }
 nav .header__title--logo {
-  width: 45%;
-  height: 150%;
+  height: 110px;
 }
 nav .header__title--logo img {
-  padding-top: 15%;
-  padding-bottom: 4%;
+  height: 65px;
+  padding-top: 6%;
 }
 
 .header__menu {
@@ -131,6 +130,7 @@ nav p {
 .fonctionnement h2 {
   padding-left: 8%;
   font-weight: 700;
+  padding-top: 6%;
 }
 .fonctionnement__assemblage {
   display: flex;
@@ -139,11 +139,11 @@ nav p {
   align-items: center;
 }
 .fonctionnement__assemblage i {
-  padding: 10%;
+  padding: 6%;
 }
 .fonctionnement__assemblage .fa-color {
   color: #9356dc;
-  padding: 10%;
+  padding: 6%;
 }
 .fonctionnement__assemblage .nombre {
   color: #f6f6f6;
@@ -206,6 +206,7 @@ nav p {
 .menu__entrees-cards {
   display: flex;
   padding: 3%;
+  overflow: hidden;
 }
 .menu__entrees-cards span {
   flex: 1 1 90%;
@@ -220,11 +221,35 @@ nav p {
 }
 .menu__entrees-cards .prix {
   font-weight: 600;
-  flex-basis: 10%;
+  flex-basis: 20%;
+  align-self: end;
+}
+.menu__entrees-cards .check {
+  margin-top: -20%;
+  margin-bottom: -20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #99E2D0;
+  margin-right: -9rem;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+  cursor: pointer;
+}
+.menu__entrees-cards .fa-circle-check {
+  font-size: 25px;
+  border-radius: 50%;
+  color: white;
+}
+.menu__entrees-cards:hover .check {
+  margin-right: -5%;
+  opacity: 1;
 }
 .menu__plats-cards {
   display: flex;
   padding: 3%;
+  overflow: hidden;
 }
 .menu__plats-cards span {
   flex: 1 1 90%;
@@ -239,11 +264,35 @@ nav p {
 }
 .menu__plats-cards .prix {
   font-weight: 600;
-  flex-basis: 10%;
+  flex-basis: 20%;
+  align-self: end;
+}
+.menu__plats-cards .check {
+  margin-top: -20%;
+  margin-bottom: -20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #99E2D0;
+  margin-right: -9rem;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+  cursor: pointer;
+}
+.menu__plats-cards .fa-circle-check {
+  font-size: 25px;
+  border-radius: 50%;
+  color: white;
+}
+.menu__plats-cards:hover .check {
+  margin-right: -5%;
+  opacity: 1;
 }
 .menu__desserts-cards {
   display: flex;
   padding: 3%;
+  overflow: hidden;
 }
 .menu__desserts-cards span {
   flex: 1 1 90%;
@@ -258,7 +307,30 @@ nav p {
 }
 .menu__desserts-cards .prix {
   font-weight: 600;
-  flex-basis: 10%;
+  flex-basis: 20%;
+  align-self: end;
+}
+.menu__desserts-cards .check {
+  margin-top: -20%;
+  margin-bottom: -20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #99E2D0;
+  margin-right: -9rem;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+  cursor: pointer;
+}
+.menu__desserts-cards .fa-circle-check {
+  font-size: 25px;
+  border-radius: 50%;
+  color: white;
+}
+.menu__desserts-cards:hover .check {
+  margin-right: -5%;
+  opacity: 1;
 }
 
 .restaurants {
@@ -343,6 +415,7 @@ article {
 .description_card-logo i {
   position: absolute;
   font-size: 30px;
+  transition: flex-basis 0.5s;
 }
 .description_card-logo .fa-solid {
   opacity: 0;
