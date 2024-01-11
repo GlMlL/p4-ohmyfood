@@ -246,6 +246,17 @@ nav p {
   margin-right: -5%;
   opacity: 1;
 }
+.menu__entrees-cards:hover .fa-circle-check {
+  animation: roll 1s ease-in-out;
+}
+@keyframes roll {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .menu__plats-cards {
   display: flex;
   padding: 3%;
@@ -288,6 +299,17 @@ nav p {
 .menu__plats-cards:hover .check {
   margin-right: -5%;
   opacity: 1;
+}
+.menu__plats-cards:hover .fa-circle-check {
+  animation: roll 1s ease-in-out;
+}
+@keyframes roll {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .menu__desserts-cards {
   display: flex;
@@ -332,7 +354,65 @@ nav p {
   margin-right: -5%;
   opacity: 1;
 }
+.menu__desserts-cards:hover .fa-circle-check {
+  animation: roll 1s ease-in-out;
+}
+@keyframes roll {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
+.loader__container {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background-color: #FFFFFF;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.95;
+  animation: disappear 500ms 3s forwards;
+  transform-origin: center;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 15px;
+  animation: loader infinite 0.3s alternate;
+}
+
+.d1 {
+  background-color: #003A68;
+}
+
+.d2 {
+  animation-delay: 0.05s;
+  background-color: #99E2D0;
+}
+
+.d3 {
+  animation-delay: 0.1s;
+  background-color: #9356DC;
+}
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+    animation-duration: 3s;
+  }
+}
+@keyframes disappear {
+  100% {
+    transform: scale(0);
+  }
+}
 .restaurants {
   display: flex;
   flex-direction: column;
