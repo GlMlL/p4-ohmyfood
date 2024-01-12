@@ -1,0 +1,192 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+      h3{
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 19px;
+        border-bottom: 3px solid #99E2D0;
+        width: 40px;
+        padding-bottom: 6px;
+          &-cards{
+            border-radius: 15px;
+          }
+      }
+      &__entrees-cards{
+        display: flex;
+        padding: 3%;
+        overflow: hidden;
+        span{
+            flex: 1 1 90%;
+          }
+        
+          h4{
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 0%;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 19px;
+  
+          }
+          .prix{
+            font-weight: 600;
+            flex-basis: 20%;
+            align-self: end;
+          }
+          .check {
+            margin-top: -20%;
+            margin-bottom: -20%;
+            padding-left: 10%;
+            padding-right: 10%;
+            background-color: #99E2D0;
+            margin-right: -9rem;
+            border-radius: 0px 15px 15px 0px;
+            display: flex;
+            align-items: center;
+            transition: 1s;
+            cursor: pointer;
+          }
+          .fa-circle-check {
+            font-size: 25px;
+            border-radius: 50%;
+            color: white ;
+          }
+          }
+          &__entrees-cards:hover .check {
+            margin-right: -5%;
+            opacity: 1;
+          }
+          &__entrees-cards:hover .fa-circle-check{
+            animation: roll 1s ease-in-out;
+          }
+          
+          @keyframes roll {
+            0% {
+              transform: rotate(360deg);
+            }
+          
+            100% {
+              transform: rotate(0deg);
+            }
+          
+          }
+      
+          
+    
+      &__plats-cards{
+        display: flex;
+        padding: 3%;
+        overflow: hidden;
+          span{
+            flex: 1 1 90%;
+          }
+          h4{
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 0%;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 19px;
+          }
+          .prix{
+            font-weight: 600;
+            flex-basis: 20%;
+            align-self: end;
+          }
+          .check {
+              margin-top: -20%;
+              margin-bottom: -20%;
+              padding-left: 10%;
+              padding-right: 10%;
+              background-color: #99E2D0;
+              margin-right: -9rem;
+              border-radius: 0px 15px 15px 0px;
+              display: flex;
+              align-items: center;
+              transition: 1s;
+              cursor: pointer;
+          }
+          .fa-circle-check {
+              font-size: 25px;
+              border-radius: 50%;
+              color: white ;
+          }
+          }
+          &__plats-cards:hover .check {
+            margin-right: -5%;
+            opacity: 1;  
+          }
+          &__plats-cards:hover .fa-circle-check{
+            animation: roll 1s ease-in-out;
+          }
+          
+          @keyframes roll {
+            0% {
+              transform: rotate(360deg);
+            }
+          
+            100% {
+              transform: rotate(0deg);
+            }
+          
+          }
+      
+      &__desserts-cards{
+        display: flex;
+        padding: 3%;
+        overflow: hidden;
+        span{
+          flex: 1 1 90%;
+        }
+        h4{
+          margin-top: 2%;
+          margin-bottom: 2%;
+          margin-left: 0%;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 19px; 
+        }
+        .prix{
+          font-weight: 600;
+          flex-basis: 20%;
+          align-self: end;
+        }
+        .check {
+          margin-top: -20%;
+          margin-bottom: -20%;
+          padding-left: 10%;
+          padding-right: 10%;
+          background-color: #99E2D0;
+          margin-right: -9rem;
+          border-radius: 0px 15px 15px 0px;
+          display: flex;
+          align-items: center;
+          transition: 1s;
+          cursor: pointer;
+        }
+        .fa-circle-check {
+          font-size: 25px;
+          border-radius: 50%;
+          color: white ;
+        }
+        }
+        &__desserts-cards:hover .check {
+          margin-right: -5%;
+          opacity: 1;  
+        }
+        &__desserts-cards:hover .fa-circle-check{
+          animation: roll 1s ease-in-out;
+        }
+        
+        @keyframes roll {
+          0% {
+            transform: rotate(360deg);
+          }
+        
+          100% {
+            transform: rotate(0deg);
+          }
+        
+        }
+}
