@@ -16,9 +16,24 @@
         display: flex;
         padding: 3%;
         overflow: hidden;
-        span{
-            flex: 1 1 90%;
+        text-overflow: ellipsis;
+        
+        
+        .description{
+          display: flex;
+          flex-direction: row;
+          align-items: end;
+          width: 100%;
+          text-overflow: ellipsis;
+          .text{
+            width: 100%;
+            text-overflow: ellipsis;
+            p{
+              margin: 2%;
+              margin-left: 0%;
+            }
           }
+        }
         
           h4{
             margin-top: 2%;
@@ -33,6 +48,8 @@
             font-weight: 600;
             flex-basis: 20%;
             align-self: end;
+            margin-bottom: 6px;
+            margin-right: 2%;
           }
           .check {
             margin-top: -20%;
@@ -78,9 +95,21 @@
         display: flex;
         padding: 3%;
         overflow: hidden;
-          span{
-            flex: 1 1 90%;
+        .description{
+          display: flex;
+          flex-direction: row;
+          align-items: end;
+          width: 100%;
+          text-overflow: ellipsis;
+          .text{
+            width: 100%;
+            text-overflow: ellipsis;
+            p{
+              margin: 2%;
+              margin-left: 0%;
+            }
           }
+        }
           h4{
             margin-top: 2%;
             margin-bottom: 2%;
@@ -93,6 +122,8 @@
             font-weight: 600;
             flex-basis: 20%;
             align-self: end;
+            margin-bottom: 6px;
+            margin-right: 2%;
           }
           .check {
               margin-top: -20%;
@@ -136,8 +167,20 @@
         display: flex;
         padding: 3%;
         overflow: hidden;
-        span{
-          flex: 1 1 90%;
+        .description{
+          display: flex;
+          flex-direction: row;
+          align-items: end;
+          width: 100%;
+          text-overflow: ellipsis;
+          .text{
+            width: 100%;
+            text-overflow: ellipsis;
+            p{
+              margin: 2%;
+              margin-left: 0%;
+            }
+          }
         }
         h4{
           margin-top: 2%;
@@ -151,6 +194,8 @@
           font-weight: 600;
           flex-basis: 20%;
           align-self: end;
+          margin-bottom: 6px;
+          margin-right: 2%;
         }
         .check {
           margin-top: -20%;
