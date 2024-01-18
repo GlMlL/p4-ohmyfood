@@ -1,8 +1,8 @@
 @use "./pages/styles";
-@use "./pages/menu";
-@use "./pages/loader";
-@use "./pages/header";
-@use "./pages/nav";
+@use "./components/menu";
+@use "./components/loader";
+@use "./components/header";
+@use "./components/nav";
 @use "./pages/fonctionnement";
 @use "./pages/restaurants";
-@use "./pages/footer";
+@use "./components/footer";

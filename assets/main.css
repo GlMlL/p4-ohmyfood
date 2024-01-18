@@ -11,9 +11,57 @@ body {
   font-size: 24px;
 }
 
+.title {
+  position: relative;
+  gap: 20%;
+}
+.title i {
+  position: absolute;
+  bottom: 10px;
+  left: 375px;
+  font-size: 30px;
+  transition: flex-basis 0.5s;
+}
+.title .fa-solid {
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  color: transparent;
+}
+.title i:hover {
+  opacity: 1;
+}
+
+.menu__entrees:nth-child(1n+0) {
+  animation: slide-in-left 1s;
+  animation-delay: 0.3s;
+}
+
+.menu__plats:nth-child(1n+0) {
+  animation: slide-in-left 1s;
+  animation-delay: 0.5s;
+}
+
+.menu__desserts:nth-child(1n+0) {
+  animation: slide-in-left 1s;
+  animation-delay: 0.7s;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .menu {
+  margin: 5%;
   display: flex;
   flex-direction: column;
+  text-overflow: ellipsis;
 }
 .menu h3 {
   font-weight: lighter;
@@ -25,6 +73,11 @@ body {
 }
 .menu h3-cards {
   border-radius: 15px;
+}
+.menu__entrees {
+  animation: showmenu 1s 1s both;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .menu__entrees-cards {
   display: flex;
@@ -334,7 +387,7 @@ form {
   background-color: #EAEAEA;
   width: 100%;
   height: 45px;
-  gap: 2px;
+  gap: 3px;
 }
 form .local-icon {
   padding-left: 5%;
@@ -345,7 +398,7 @@ form .local-icon {
   background-color: #EAEAEA;
   font-size: 16px;
   text-align: center;
-  width: 35%;
+  width: 33%;
   font-weight: 500;
   color: #353535;
 }
@@ -377,6 +430,30 @@ nav p {
   font-size: 18px;
 }
 
+@media (min-width: 768px) {
+  nav {
+    padding-bottom: 0%;
+  }
+  nav h1 {
+    margin-top: 4%;
+  }
+  div.fonctionnement__assemblage {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+  }
+  section.fonctionnement h2 {
+    padding-left: 5%;
+    padding-top: 3%;
+  }
+  button.fonctionnement__assemblage-choix {
+    width: 27%;
+  }
+  section.restaurants {
+    padding-top: 0%;
+    margin-top: 4%;
+  }
+}
 .title button {
   border: none;
   border-radius: 30px;
@@ -450,17 +527,23 @@ nav p {
 }
 
 .content {
-  margin: 5%;
+  width: 100%;
+  margin-top: -30px;
+  border-radius: 25px 25px;
+  background: #F7F7F7;
 }
 .content .title {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
 }
 .content .title h1 {
   font-family: shrikhand;
   font-size: 2em;
+  margin-bottom: 0%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
 }
 
 .restaurants {
@@ -549,10 +632,12 @@ article {
 }
 .description_card-logo .fa-solid {
   opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  color: transparent;
 }
 .description_card-logo i:hover {
   opacity: 1;
-  color: rgb(147, 86, 220);
 }
 
 footer {
