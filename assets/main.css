@@ -406,6 +406,8 @@ nav .header__title--logo img {
 
 .image__menu {
   width: 100%;
+  display: flex;
+  max-height: 50%;
 }
 .image__menu img {
   object-fit: cover;
@@ -437,7 +439,7 @@ form .local-icon {
 
 input.form__searchbar {
   font-family: roboto;
-  width: 35%;
+  width: 42%;
 }
 
 @media (min-width: 768px) {
