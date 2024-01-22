@@ -397,6 +397,7 @@ nav .header__title--logo img {
   color: #353535;
 }
 .header__menu-logo {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
