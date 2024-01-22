@@ -88,6 +88,7 @@
                 background: linear-gradient(#9356DC, #FF79DA);
                 background-clip: text;
                 color: transparent;
+                transition: opacity 1s;
               } 
           i:hover{
             opacity: 1;

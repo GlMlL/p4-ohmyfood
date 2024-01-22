@@ -16,7 +16,7 @@ nav{
   .header__menu{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 3%;
           &-arrow{
             display: flex;
@@ -34,7 +34,7 @@ nav{
             justify-content: center;
               img{
                 width: 52%;
-                padding-left: 20%;
+                
               }
             
   

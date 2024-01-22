@@ -27,6 +27,7 @@ body {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   color: transparent;
+  transition: opacity 1s;
 }
 .title i:hover {
   opacity: 1;
@@ -381,7 +382,7 @@ nav .header__title--logo img {
 .header__menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 3%;
 }
 .header__menu-arrow {
@@ -401,7 +402,6 @@ nav .header__title--logo img {
 }
 .header__menu-logo img {
   width: 52%;
-  padding-left: 20%;
 }
 
 .image__menu {
@@ -598,6 +598,12 @@ nav p {
   margin-left: 5%;
 }
 
+@media (min-width: 768px) {
+  .content {
+    width: 67%;
+    left: 16%;
+  }
+}
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -687,6 +693,7 @@ article {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   color: transparent;
+  transition: opacity 1s;
 }
 .description_card-logo i:hover {
   opacity: 1;
@@ -721,18 +728,18 @@ footer {
 
 @media (min-width: 768px) {
   .footer__main {
-    padding: 47px 22px 47px 22px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
     white-space: nowrap;
+    padding-left: 0%;
   }
   .footer__main h2 {
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 0.5%;
+    margin-top: 6%;
   }
   .footer__main a {
-    padding-top: 2%;
+    margin-top: 6%;
   }
 }/*# sourceMappingURL=main.css.map */
