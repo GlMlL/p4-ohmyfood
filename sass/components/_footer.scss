@@ -25,3 +25,24 @@ footer{
       }
     
   }
+  @media (min-width: 768px){
+  footer{
+  
+  
+  }
+  .footer__main{
+    padding: 47px 22px 47px 22px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    white-space: nowrap;
+    h2{
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 0.5%;
+    }
+    a{
+      padding-top: 2%;
+    }
+  }
+}

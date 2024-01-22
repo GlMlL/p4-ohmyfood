@@ -17,9 +17,9 @@ body {
 }
 .title i {
   position: absolute;
-  bottom: 10px;
-  left: 375px;
-  font-size: 30px;
+  bottom: 6px;
+  left: 255px;
+  font-size: 24px;
   transition: flex-basis 0.5s;
 }
 .title .fa-solid {
@@ -117,15 +117,17 @@ body {
   min-width: 350px;
 }
 .menu__entrees-cards .prix {
+  display: flex;
+  justify-content: end;
   font-weight: 600;
-  flex: 0 0 20%;
+  flex: 0 0 18%;
   align-self: end;
   margin-bottom: 6px;
   margin-right: 2%;
+  padding-bottom: 2%;
 }
 .menu__entrees-cards .check {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -147,7 +149,7 @@ body {
   animation: roll 1s ease-in-out;
 }
 .menu article:hover .description {
-  flex-basis: 60%;
+  flex-basis: 70%;
 }
 @keyframes roll {
   0% {
@@ -159,23 +161,31 @@ body {
 }
 .menu__plats-cards {
   display: flex;
-  padding: 3%;
+  min-width: 350px;
   overflow: hidden;
 }
 .menu__plats-cards .description {
   display: flex;
   flex-direction: row;
   align-items: end;
-  width: 100%;
+  flex: 0 0 80%;
+  transition: flex-basis 0.9s ease-in;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu__plats-cards .description .text {
-  width: 100%;
+  padding: 3%;
+  min-width: 318px;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu__plats-cards .description .text p {
   margin: 2%;
   margin-left: 0%;
+  min-width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__plats-cards h4 {
   margin-top: 2%;
@@ -186,24 +196,24 @@ body {
   line-height: 19px;
 }
 .menu__plats-cards .prix {
+  display: flex;
+  justify-content: end;
   font-weight: 600;
-  flex-basis: 20%;
+  flex: 0 0 18%;
   align-self: end;
   margin-bottom: 6px;
   margin-right: 2%;
+  padding-bottom: 2%;
 }
 .menu__plats-cards .check {
-  margin-top: -20%;
-  margin-bottom: -20%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
   background-color: #99E2D0;
-  margin-right: -9rem;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   align-items: center;
   transition: 1s;
   cursor: pointer;
+  flex: 0 0 20%;
 }
 .menu__plats-cards .fa-circle-check {
   font-size: 25px;
@@ -217,6 +227,9 @@ body {
 .menu__plats-cards:hover .fa-circle-check {
   animation: roll 1s ease-in-out;
 }
+.menu article:hover .description {
+  flex-basis: 60%;
+}
 @keyframes roll {
   0% {
     transform: rotate(360deg);
@@ -227,23 +240,29 @@ body {
 }
 .menu__desserts-cards {
   display: flex;
-  padding: 3%;
+  min-width: 350px;
   overflow: hidden;
 }
 .menu__desserts-cards .description {
   display: flex;
   flex-direction: row;
   align-items: end;
-  width: 100%;
-  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 0 0 80%;
+  transition: flex-basis 0.9s ease-in;
 }
 .menu__desserts-cards .description .text {
-  width: 100%;
-  text-overflow: ellipsis;
+  padding: 3%;
+  min-width: 318px;
+  overflow: hidden;
 }
 .menu__desserts-cards .description .text p {
   margin: 2%;
   margin-left: 0%;
+  min-width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__desserts-cards h4 {
   margin-top: 2%;
@@ -252,26 +271,30 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 350px;
 }
 .menu__desserts-cards .prix {
+  display: flex;
+  justify-content: end;
   font-weight: 600;
-  flex-basis: 20%;
+  flex: 0 0 18%;
   align-self: end;
   margin-bottom: 6px;
   margin-right: 2%;
+  padding-bottom: 2%;
 }
 .menu__desserts-cards .check {
-  margin-top: -20%;
-  margin-bottom: -20%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
   background-color: #99E2D0;
-  margin-right: -9rem;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   align-items: center;
   transition: 1s;
   cursor: pointer;
+  flex: 0 0 20%;
 }
 .menu__desserts-cards .fa-circle-check {
   font-size: 25px;
@@ -414,8 +437,14 @@ form .local-icon {
 
 input.form__searchbar {
   font-family: roboto;
+  width: 35%;
 }
 
+@media (min-width: 768px) {
+  input.form__searchbar {
+    width: 20%;
+  }
+}
 nav {
   display: flex;
   flex-direction: column;
@@ -465,6 +494,14 @@ nav p {
   section.restaurants {
     padding-top: 0%;
     margin-top: 4%;
+  }
+  div.restaurants__menus {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8%;
+  }
+  article.restaurants__menus-cards {
+    flex: 0 0 45%;
   }
 }
 .title button {
@@ -550,10 +587,11 @@ nav p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .content .title h1 {
   font-family: shrikhand;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 0%;
   display: flex;
   justify-content: flex-start;
@@ -679,4 +717,22 @@ footer {
 }
 .footer__main span {
   color: #EAEAEA;
+}
+
+@media (min-width: 768px) {
+  .footer__main {
+    padding: 47px 22px 47px 22px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+  .footer__main h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0.5%;
+  }
+  .footer__main a {
+    padding-top: 2%;
+  }
 }/*# sourceMappingURL=main.css.map */
