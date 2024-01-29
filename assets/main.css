@@ -13,12 +13,11 @@ body {
 
 .title {
   position: relative;
-  gap: 20%;
+  display: flex;
+  gap: 5%;
 }
 .title i {
   position: absolute;
-  bottom: 6px;
-  left: 255px;
   font-size: 24px;
   transition: flex-basis 0.5s;
 }
@@ -80,33 +79,26 @@ body {
 }
 .menu__entrees-cards {
   display: flex;
-  min-width: 350px;
   overflow: hidden;
-  text-overflow: ellipsis;
+  padding-left: 2%;
 }
 .menu__entrees-cards .description {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
   overflow: hidden;
   flex: 0 0 80%;
   transition: flex-basis 0.9s ease-in;
 }
 .menu__entrees-cards .description .text {
   padding: 3%;
-  min-width: 318px;
-  overflow: hidden;
 }
 .menu__entrees-cards .description .text p {
-  margin: 2%;
-  margin-left: 0%;
-  min-width: 350px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
 .menu__entrees-cards h4 {
-  margin-top: 2%;
+  margin-top: 0%;
   margin-bottom: 2%;
   margin-left: 0%;
   font-weight: 700;
@@ -115,7 +107,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-width: 350px;
 }
 .menu__entrees-cards .prix {
   display: flex;
@@ -123,9 +114,8 @@ body {
   font-weight: 600;
   flex: 0 0 18%;
   align-self: end;
-  margin-bottom: 6px;
   margin-right: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
 .menu__entrees-cards .check {
   padding-left: 8%;
@@ -150,7 +140,7 @@ body {
   animation: roll 1s ease-in-out;
 }
 .menu article:hover .description {
-  flex-basis: 70%;
+  flex-basis: 60%;
 }
 @keyframes roll {
   0% {
@@ -162,39 +152,34 @@ body {
 }
 .menu__plats-cards {
   display: flex;
-  min-width: 350px;
   overflow: hidden;
+  padding-left: 2%;
 }
 .menu__plats-cards .description {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
+  overflow: hidden;
   flex: 0 0 80%;
   transition: flex-basis 0.9s ease-in;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__plats-cards .description .text {
   padding: 3%;
-  min-width: 318px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__plats-cards .description .text p {
-  margin: 2%;
-  margin-left: 0%;
-  min-width: 350px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
 .menu__plats-cards h4 {
-  margin-top: 2%;
+  margin-top: 0%;
   margin-bottom: 2%;
   margin-left: 0%;
   font-weight: 700;
   font-size: 18px;
   line-height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__plats-cards .prix {
   display: flex;
@@ -202,9 +187,8 @@ body {
   font-weight: 600;
   flex: 0 0 18%;
   align-self: end;
-  margin-bottom: 6px;
   margin-right: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
 .menu__plats-cards .check {
   padding-left: 8%;
@@ -241,32 +225,26 @@ body {
 }
 .menu__desserts-cards {
   display: flex;
-  min-width: 350px;
   overflow: hidden;
+  padding-left: 2%;
 }
 .menu__desserts-cards .description {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
   overflow: hidden;
   flex: 0 0 80%;
   transition: flex-basis 0.9s ease-in;
 }
 .menu__desserts-cards .description .text {
   padding: 3%;
-  min-width: 318px;
-  overflow: hidden;
 }
 .menu__desserts-cards .description .text p {
-  margin: 2%;
-  margin-left: 0%;
-  min-width: 350px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
 .menu__desserts-cards h4 {
-  margin-top: 2%;
+  margin-top: 0%;
   margin-bottom: 2%;
   margin-left: 0%;
   font-weight: 700;
@@ -275,7 +253,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  min-width: 350px;
 }
 .menu__desserts-cards .prix {
   display: flex;
@@ -283,9 +260,8 @@ body {
   font-weight: 600;
   flex: 0 0 18%;
   align-self: end;
-  margin-bottom: 6px;
   margin-right: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
 .menu__desserts-cards .check {
   padding-left: 8%;
@@ -308,6 +284,9 @@ body {
 }
 .menu__desserts-cards:hover .fa-circle-check {
   animation: roll 1s ease-in-out;
+}
+.menu article:hover .description {
+  flex-basis: 60%;
 }
 @keyframes roll {
   0% {
@@ -382,7 +361,7 @@ nav .header__title--logo img {
 .header__menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding: 3%;
 }
 .header__menu-arrow {
@@ -390,8 +369,9 @@ nav .header__title--logo img {
   align-items: flex-start;
   align-items: center;
   font-size: larger;
-  color: grey;
+  color: #353535;
   width: 18px;
+  justify-content: flex-start;
 }
 .header__menu-arrow i {
   color: #353535;
@@ -408,7 +388,7 @@ nav .header__title--logo img {
 .image__menu {
   width: 100%;
   display: flex;
-  max-height: 50%;
+  max-height: 250px;
 }
 .image__menu img {
   object-fit: cover;
@@ -475,7 +455,7 @@ nav p {
   font-size: 18px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   nav {
     padding-bottom: 0%;
   }
@@ -601,7 +581,7 @@ nav p {
   margin-left: 5%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .content {
     width: 67%;
     left: 16%;
@@ -711,7 +691,7 @@ footer {
 
 .footer__main {
   padding-left: 5%;
-  color: #EAEAEA;
+  color: #eaeaea;
 }
 .footer__main h2 {
   font-family: shrikhand;
@@ -726,10 +706,10 @@ footer {
   flex-basis: 25px;
 }
 .footer__main span {
-  color: #EAEAEA;
+  color: #eaeaea;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer__main {
     display: flex;
     flex-direction: row-reverse;

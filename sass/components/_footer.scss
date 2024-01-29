@@ -7,7 +7,7 @@ footer{
   
   .footer__main{
     padding-left: 5%;
-    color: #EAEAEA;
+    color: #eaeaea;
       h2{
         font-family: shrikhand;
       }
@@ -21,11 +21,11 @@ footer{
         flex-basis: 25px;
       }
       span{
-        color: #EAEAEA;
+        color: #eaeaea;
       }
     
   }
-  @media (min-width: 768px){
+  @media (min-width: 1024px){
   
   .footer__main{
     display: flex;

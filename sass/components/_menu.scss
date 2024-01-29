@@ -1,11 +1,10 @@
 .title{
   position: relative;
-  gap: 20%;
+  display: flex;
+  gap: 5%;
        
           i{
             position: absolute;
-            bottom: 6px;
-            left: 255px;
             font-size: 24px;
             transition: flex-basis 0.5s ;
           }
@@ -67,38 +66,25 @@
       }
       &__entrees-cards{
         display: flex;
-        min-width: 350px;
         overflow: hidden;
-        text-overflow: ellipsis;
+        padding-left: 2%;
         .description{
-          display: flex;
-          flex-direction: row;
-          align-items: end;
-          
           overflow: hidden;
-          
           flex: 0 0 80%;
           transition: flex-basis 0.9s ease-in;
           .text{
-            
             padding: 3%;
-            min-width: 318px;
-            overflow: hidden;
-            
             p{
-              margin: 2%;
-              margin-left: 0%;
-              min-width: 350px;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
-              
+              margin-bottom: 0%;
+              margin-top: 0%;
             }
           }
         }
-        
           h4{
-            margin-top: 2%;
+            margin-top: 0%;
             margin-bottom: 2%;
             margin-left: 0%;
             font-weight: 700;
@@ -107,21 +93,17 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            min-width: 350px;
           }
-          
           .prix{
             display: flex;
             justify-content: end;
             font-weight: 600;
             flex: 0 0 18%;
             align-self: end;
-            margin-bottom: 6px;
             margin-right: 2%;
-            padding-bottom: 2%;
+            padding-bottom: 3%;
           }
           .check {
-          
             padding-left: 8%;
             background-color: #99E2D0;
             border-radius: 0px 15px 15px 0px;
@@ -145,7 +127,7 @@
             animation: roll 1s ease-in-out;
           }
           article:hover .description{
-            flex-basis: 70%;
+            flex-basis: 60%;
           }
           
           @keyframes roll {
@@ -163,41 +145,33 @@
     
       &__plats-cards{
         display: flex;
-        min-width: 350px;
-        
         overflow: hidden;
-
+        padding-left: 2%;
         .description{
-          display: flex;
-          flex-direction: row;
-          align-items: end;
+          overflow: hidden;
           flex: 0 0 80%;
           transition: flex-basis 0.9s ease-in;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          
           .text{
             padding: 3%;
-            min-width: 318px;
-            overflow: hidden;
-            text-overflow: ellipsis;
             p{
-              margin: 2%;
-              margin-left: 0%;
-              min-width: 350px;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
+              margin-bottom: 0%;
+              margin-top: 0%;
             }
           }
         }
           h4{
-            margin-top: 2%;
+            margin-top: 0%;
             margin-bottom: 2%;
             margin-left: 0%;
             font-weight: 700;
             font-size: 18px;
             line-height: 19px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
           }
           .prix{
             display: flex;
@@ -205,9 +179,8 @@
             font-weight: 600;
             flex: 0 0 18%;
             align-self: end;
-            margin-bottom: 6px;
             margin-right: 2%;
-            padding-bottom: 2%;
+            padding-bottom: 3%;
           }
           .check {
             padding-left: 8%;
@@ -249,62 +222,52 @@
       
       &__desserts-cards{
         display: flex;
-        min-width: 350px;
         overflow: hidden;
+        padding-left: 2%;
         .description{
-          display: flex;
-          flex-direction: row;
-          align-items: end;
-          
           overflow: hidden;
-          
           flex: 0 0 80%;
           transition: flex-basis 0.9s ease-in;
           .text{
             padding: 3%;
-            min-width: 318px;
-            overflow: hidden;
             p{
-              margin: 2%;
-              margin-left: 0%;
-              min-width: 350px;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
+              margin-bottom: 0%;
+              margin-top: 0%;
             }
           }
         }
         h4{
-          margin-top: 2%;
-            margin-bottom: 2%;
-            margin-left: 0%;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 19px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            min-width: 350px;
+          margin-top: 0%;
+          margin-bottom: 2%;
+          margin-left: 0%;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 19px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
         .prix{
           display: flex;
-            justify-content: end;
-            font-weight: 600;
-            flex: 0 0 18%;
-            align-self: end;
-            margin-bottom: 6px;
-            margin-right: 2%;
-            padding-bottom: 2%;
+          justify-content: end;
+          font-weight: 600;
+          flex: 0 0 18%;
+          align-self: end;
+          margin-right: 2%;
+          padding-bottom: 3%;
         }
         .check {
           padding-left: 8%;
-            background-color: #99E2D0;
-            border-radius: 0px 15px 15px 0px;
-            display: flex;
-            align-items: center;
-            transition: 1s;
-            cursor: pointer;
-            flex: 0 0 20%;
+          background-color: #99E2D0;
+          border-radius: 0px 15px 15px 0px;
+          display: flex;
+          align-items: center;
+          transition: 1s;
+          cursor: pointer;
+          flex: 0 0 20%;
         }
         .fa-circle-check {
           font-size: 25px;
@@ -318,6 +281,9 @@
         }
         &__desserts-cards:hover .fa-circle-check{
           animation: roll 1s ease-in-out;
+        }
+        article:hover .description{
+          flex-basis: 60%;
         }
         
         @keyframes roll {

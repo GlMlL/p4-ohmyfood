@@ -1,6 +1,20 @@
-@mixin flexcenter{
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-items-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-justify-items-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-    
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
