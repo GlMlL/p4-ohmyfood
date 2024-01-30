@@ -1,7 +1,6 @@
 .restaurants{
-    display: flex;
-    flex-direction: column;
-    background-color: #f6f6f6;
+    @include flex-column;
+    background-color: $light-grey2;
     margin-top: 15%;
     padding-top: 10%;
       h1{
@@ -29,16 +28,14 @@
               top: 5%;
               right: 5%;
                 p {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
+                  @include flex-justify-items-center;
                   font-family: roboto;
                   font-size: 14px;
                   font-weight: 500;
                   height: 30px;
                   padding: 5px 15px;
                   color: #008766;
-                  background-color: #99E2D0;
+                  background-color: $tertiary-color;
                   border-radius: 5%;
                   margin-left: 10px;
                 }
@@ -56,16 +53,14 @@
   article{
     margin-bottom: 5%;
     border-radius: 15px;
-    background-color: #ffffff;
+    background-color: $text-white;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   }
   
   .description_card{
-    display: flex;
-    flex-direction: row;
+    @include flex-items-center;
     margin-left: 5%;
     justify-content: space-between;
-    align-items: center;
       h2{
         margin-bottom: 1%;
       }

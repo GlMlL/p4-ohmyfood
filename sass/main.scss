@@ -1,10 +1,11 @@
-@use "./pages/styles";
-@use "./components/menu";
-@use "./components/loader";
-@use "./components/header";
-@use "./components/nav";
-@use "./pages/fonctionnement";
-@use "./pages/restaurants";
-@use "./components/footer";
-@use "./utils/mixins";
-@use "./utils/variables";
+@import"./utils/variables";
+@import"./utils/mixins";
+@import"./pages/styles";
+@import"./components/menu";
+@import"./components/loader";
+@import"./components/header";
+@import"./components/nav";
+@import"./pages/fonctionnement";
+@import"./pages/restaurants";
+@import"./components/footer";
+

@@ -2,7 +2,7 @@
     position: fixed;
     z-index: 1;
     inset: 0;
-    background-color: #FFFFFF;
+    background-color: $text-white;
     height: auto;
     display: flex;
     justify-content: center;
@@ -21,17 +21,17 @@
   }
   
   .d1 {
-    background-color: #9356DC;
+    background-color: $primary-color;
   }
   
   .d2 {
     animation-delay: 0.05s;
-    background-color: #FF79DA;
+    background-color: $secondary-color;
   }
   
   .d3 {
     animation-delay: 0.1s;
-    background-color: #99E2D0;
+    background-color: $tertiary-color;
   }
   
   @keyframes loader {
