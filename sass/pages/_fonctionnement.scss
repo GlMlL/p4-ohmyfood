@@ -1,7 +1,7 @@
 .fonctionnement{
     @include flex-column;
       h2{
-        padding-left: 8%;
+        margin-left: 4%;
         font-weight: 700;
         padding-top: 6%;
         }
@@ -69,6 +69,10 @@
     .content{
       width: 67%;
       left: 16%;
+    }
+    section.fonctionnement h2{
+      padding-left: 0%;
+      margin-left: 4%;
     }
   }
   

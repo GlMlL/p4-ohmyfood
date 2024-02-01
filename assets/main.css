@@ -108,6 +108,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: 1%;
 }
 .menu__entrees-cards .prix {
   display: flex;
@@ -181,6 +182,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: 1%;
 }
 .menu__plats-cards .prix {
   display: flex;
@@ -254,6 +256,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: 1%;
 }
 .menu__desserts-cards .prix {
   display: flex;
@@ -405,9 +408,14 @@ form {
   width: 100%;
   height: 45px;
   gap: 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 form .local-icon {
   padding-left: 5%;
+}
+
+i.fa-solid.fa-location-dot {
+  color: #000000;
 }
 
 .form__searchbar {
@@ -423,6 +431,10 @@ form .local-icon {
 input.form__searchbar {
   font-family: roboto;
   width: 42%;
+}
+
+input::placeholder {
+  color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -453,6 +465,10 @@ nav p {
   line-height: 21px;
   font-weight: 300;
   font-size: 18px;
+}
+
+nav.title {
+  border-radius: 0px;
 }
 
 .title {
@@ -517,7 +533,7 @@ nav p {
   flex-direction: column;
 }
 .fonctionnement h2 {
-  padding-left: 8%;
+  margin-left: 4%;
   font-weight: 700;
   padding-top: 6%;
 }
@@ -587,6 +603,10 @@ nav p {
   .content {
     width: 67%;
     left: 16%;
+  }
+  section.fonctionnement h2 {
+    padding-left: 0%;
+    margin-left: 4%;
   }
 }
 .restaurants {

@@ -21,8 +21,13 @@ nav{
         font-weight: 300;
         font-size: 18px;
       }
+}    
       
-  }
+nav.title{
+        border-radius: 0px;
+      }
+      
+
  .title{
     background-color: $light-grey2;
   }
