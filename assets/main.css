@@ -415,6 +415,12 @@ form .local-icon {
   padding-left: 5%;
 }
 
+@media (min-width: 768px) {
+  form {
+    box-shadow: none;
+    margin-bottom: 0px;
+  }
+}
 span.local-icon i.fa-solid.fa-location-dot {
   color: #000000;
 }
