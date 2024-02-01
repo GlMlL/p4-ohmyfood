@@ -415,7 +415,7 @@ form .local-icon {
   padding-left: 5%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   form {
     box-shadow: none;
     margin-bottom: 0px;
